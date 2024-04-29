@@ -33,6 +33,7 @@ function App() {
   console.log(listData1)
   return (
     <>
+    <div>
       <h2>List1</h2>
       <ul>
         {listData1.map((item, id) => (
@@ -41,6 +42,7 @@ function App() {
           </>
         ))}
       </ul>
+      <h2>List2</h2>
       <ul>
         {listData2.map((item) => (
           <>
@@ -48,6 +50,7 @@ function App() {
           </>
         ))}
       </ul>
+      </div>
       <button onClick={handelSwap}>Swap List</button>
     </>
   )
